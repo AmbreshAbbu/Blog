@@ -1,0 +1,25 @@
+<div class="comments">
+    <h3 class="comments-title">Comments</h3>
+    <div class="comment-form-title">Write comment</div>
+    <!-- <comment-form submitLabel="Write" (handleSubmit)="addComment()">
+    </comment-form> -->
+    <form class="form-signin" [formGroup]="commentForm" (ngSubmit)="onSubmit()" novalidate>
+        <input type="text" id="inputBody" [formControlName]="'body'" class="form-control" placeholder="Add comment.." required="" autofocus="">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Comment</button>
+    </form>
+    <br>
+    <div class="comments-container">
+        <div class="row" *ngFor="let comment of comments | async">
+            <div class="comment-image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSibRhC_l2NylzcKzyuNT8H2PnInA0l93Rg7AVfSJqzKw&s" />
+            </div>
+            <div class="comment-content">
+                <div class="comment-author">{{ comment.name}}</div>
+            </div>
+            <div class="comment-text">
+                <p>{{comment.body}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+  

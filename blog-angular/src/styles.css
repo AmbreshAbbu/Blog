@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+  }
+
+  .comments-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .comment-right-part {
+    width: 100%;
+  }
+  
+  .comment-right-part {
+    width: 100%;
+  }
+  
+  .comment-image-container img {
+    border-radius: 50px;
+    max-width: 05%;
+    height: auto;
+  }
+  
+  .comment-content {
+    display: flex;
+  }
+  
+  .comment-author {
+    margin-right: 8px;
+    font-size: 20px;
+    color: rgb(59, 130, 246);
+  }
+  
+  .comment-text {
+    font-size: 18px;
+  }
+  
+  
